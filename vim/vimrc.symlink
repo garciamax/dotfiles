@@ -1,0 +1,24 @@
+set encoding=utf-8
+
+set clipboard=unnamed
+
+execute pathogen#infect()
+filetype plugin indent on
+
+" Autoreload .vimrc on save
+autocmd! bufwritepost .vimrc source %
+
+syntax on
+" Show line numbers
+set nu
+" Show “invisible” characters
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set list
+" Always show status line
+set laststatus=2
+" Show the current mode
+set showmode
+" Show the filename in the window titlebar
+set title
+
+set mouse=a
